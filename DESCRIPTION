@@ -1,0 +1,64 @@
+Package: INLAcircular
+Type: Package
+Title: Bayesian Joint Circular Regression Using 'INLA'
+Version: 1.0.0
+Authors@R: c(person(
+    given = "Xiang",
+    family = "Ye",
+    email = "xiang.ye@kaust.edu.sa",
+    role = c("aut", "cre", "cph")
+  ),
+  person(
+    given = "Janet",
+    family = "Van Niekerk",
+    role = "aut"
+  ),
+  person(
+    given = "Haavard",
+    family = "Rue",
+    role = c("aut", "cph")
+  ),
+  person(
+    given = "Gerard",
+    family = "Jungman",
+    role = c("ctb", "cph"),
+    comment = "Bessel routines adapted from the GNU Scientific Library"
+  ),
+  person(
+    given = "Peter John",
+    family = "Acklam",
+    role = "ctb",
+    comment = "Normal quantile approximation"
+  ))
+Description: Provides a Bayesian regression framework for joint models with
+    circular responses and covariates using integrated nested Laplace
+    approximations, following Ye, Van Niekerk and Rue (2026)
+    <doi:10.48550/arXiv.2602.08413>. The package supports link-adjusted von
+    Mises likelihoods, shared latent predictors, structured latent effects, and optional
+    LKJ-based multivariate covariance models. It also provides compiled
+    circular densities and d/p/q/r penalized-complexity priors for von Mises,
+    cardioid, and wrapped Cauchy concentration parameters as developed by
+    Ye, Van Niekerk and Rue (2026) <doi:10.1177/1471082X261453677>.
+License: GPL (>= 3)
+URL: https://github.com/XiangYEstats/INLAcircular
+BugReports: https://github.com/XiangYEstats/INLAcircular/issues
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Imports: dplyr, stats, utils
+Suggests: circular, graphpcor, INLA (>= 25.08.21), INLAtools, knitr,
+        pkgload, rmarkdown
+VignetteBuilder: knitr, rmarkdown
+Additional_repositories: https://inla.r-inla-download.org/R/stable
+NeedsCompilation: yes
+Packaged: 2026-10-18 07:13:45 UTC; xiang
+Author: Xiang Ye [aut, cre, cph],
+  Janet Van Niekerk [aut],
+  Haavard Rue [aut, cph],
+  Gerard Jungman [ctb, cph] (Bessel routines adapted from the GNU
+    Scientific Library),
+  Peter John Acklam [ctb] (Normal quantile approximation)
+Maintainer: Xiang Ye <xiang.ye@kaust.edu.sa>
+Repository: CRAN
+Date/Publication: 2026-10-28 10:40:08 UTC
